@@ -2,6 +2,8 @@ import type { MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
+import logo from "../images/logo.png";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Risk Atlas" },
@@ -52,6 +54,11 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Risk Atlas</h1>
+      <img
+        src={logo}
+        alt="Continuum Space System's logo"
+        style={{ maxWidth: "25%", height: "auto" }}
+      />
       <link
         rel="stylesheet"
         href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
