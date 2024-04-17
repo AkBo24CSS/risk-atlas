@@ -63,15 +63,29 @@ export default function Index() {
         language-code="en"
         max-query-length="-1"
       >
-        <df-messenger-chat-bubble chat-title="RiFTLAB"></df-messenger-chat-bubble>
+        <df-messenger-chat
+          chat-title="IRIS"
+          style={{ textAlign: "center" }}
+        ></df-messenger-chat>
       </df-messenger>
 
       <style>
-        {`df-messenger {
+        {`  df-messenger {
     z-index: 999;
     position: fixed;
-    bottom: 16px;
-    right: 16px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #181A29;
+    --df-messenger-message-user-background: #fefefe;
+    --df-messenger-message-bot-background: #bbdefb;
+  }
+  
+  .titlebar-wrapper {
+    color: black;
   }`}
       </style>
     </div>
